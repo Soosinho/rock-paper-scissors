@@ -1,0 +1,126 @@
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    height: 36%;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 16px;
+}
+
+.player img, .bot img {
+    -webkit-filter: drop-shadow(2px 6px 6px rgba(34, 34, 34, 0.205));
+    filter: drop-shadow(2px 6px 6px #222);
+}
+
+.bot {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    margin-right: 16px;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(41, 41, 41, 0.863);
+    width: 300px;
+    height: 94%;
+    padding: 0 10px;
+    border-radius: 22px;
+    border: 6px solid rgb(230, 230, 230);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.options {
+    display: flex;
+    border-radius: 16px;
+    margin-top: 30px;
+    position: absolute;
+    padding: 20px;
+    background-color: #0000007a;
+}
+
+.option {
+    cursor: pointer;
+    border-radius: 16px;
+    background-color: #0000007a;
+    margin: 0 6px;
+    padding: 10px;
+}
+
+.option:hover {
+    background-color: #000000a6;
+}
+
+.option img{
+    width: 100px;
+    height:100px;
+}
+
+.winner {
+    display: flex;
+    background-color: #222222c7;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    justify-self: center;
+    border-radius: 10px;
+    color: white;
+    border: 4px solid rgba(255, 255, 255, 0.938);
+    padding: 4px 20px;
+    text-transform: uppercase;
+}
+
+.play-again {
+    padding: 0 10px;
+    height: 45px;
+    margin-left: 16px;
+    cursor: pointer;
+    background-color: rgba(34, 34, 34, 0.89);
+    color: rgb(235, 235, 235);
+    font-size: 20px;
+}
+
+.playerChoice {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.botChoice {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.choosen img{
+    width: 100px;
+    height:100px;
+    -webkit-filter: drop-shadow(2px 6px 6px rgba(34, 34, 34, 0.205));
+    filter: drop-shadow(2px 6px 6px #222);
+}
+
+.botChoosen img {
+    width: 100px;
+    height:100px;
+    -webkit-filter: drop-shadow(2px 6px 6px rgba(34, 34, 34, 0.205));
+    filter: drop-shadow(2px 6px 6px #222);
+}

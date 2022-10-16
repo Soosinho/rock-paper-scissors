@@ -1,0 +1,71 @@
+<div class="options" *ngIf="!choosen">
+    <div class="option" (click)="playerChoice('rock')">
+        <img src="../../assets/rock.png" alt="rock">
+    </div>
+
+    <div class="option" (click)="playerChoice('paper')">
+        <img src="../../assets/paper.png" alt="paper">
+    </div>
+
+    <div class="option" (click)="playerChoice('scissors')">
+        <img src="../../assets/scissors.png" alt="scissors">
+    </div>
+</div>
+
+<div class="winner" *ngIf="winner">
+    <h2 *ngIf="winner != 'draw'">{{winner}} venceu!</h2>
+    <h2 *ngIf="winner == 'draw'">Empate!</h2>
+
+    <button type="button" class="play-again">
+        Jogar Novamente
+    </button>
+</div>
+
+<div class="game">
+    <div class="player">
+        <img src="../../assets/player.png" alt="" width="120px" height="200px">
+        <p>Wins: {{playerWins}}</p>
+    </div>
+
+    <div class="board">
+        <div class="playerChoice">
+            <div class="choosen" *ngIf="choosen == 'rock' && winner">
+                <img src="../../assets/rock.png" alt="rock">
+            </div>
+
+            <div class="choosen" *ngIf="choosen == 'paper' && winner">
+                <img src="../../assets/paper.png" alt="paper">
+            </div>
+
+            <div class="choosen" *ngIf="choosen == 'scissors' && winner">
+                <img src="../../assets/scissors.png" alt="scissors">
+            </div>
+
+            <div class="choosen" *ngIf="choosen && !winner">
+                <img src="../../assets/question_block.png" alt="">
+            </div>
+        </div>
+        <div class="botChoice">
+            <div class="botChoosen" *ngIf="botChoosen == 'rock' && winner">
+                <img src="../../assets/rock.png" alt="rock">
+            </div>
+
+            <div class="botChoosen" *ngIf="botChoosen == 'paper' && winner">
+                <img src="../../assets/paper.png" alt="paper">
+            </div>
+
+            <div class="botChoosen" *ngIf="botChoosen == 'scissors' && winner">
+                <img src="../../assets/scissors.png" alt="scissors">
+            </div>
+
+            <div class="botChoosen" *ngIf="botChoosen && !winner">
+                <img src="../../assets/question_block.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bot">
+        <p>Wins: {{botWins}}</p>
+        <img src="../../assets/bot.png" alt="" width="130px" height="200px" style="transform: scaleX(-1);">
+    </div>
+</div>

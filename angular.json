@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-material-tutorial": {
+    "rock-paper-scissors": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-material-tutorial",
+            "outputPath": "dist/rock-paper-scissors",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-material-tutorial:build:production"
+              "browserTarget": "rock-paper-scissors:build:production"
             },
             "development": {
-              "browserTarget": "angular-material-tutorial:build:development"
+              "browserTarget": "rock-paper-scissors:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-material-tutorial:build"
+            "browserTarget": "rock-paper-scissors:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d1e2f18b-912a-49bf-9c06-aeb5631745a9"
   }
 }
